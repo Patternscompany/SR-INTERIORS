@@ -82,8 +82,6 @@ $(".testi-carousel").owlCarousel({
   });
   $(".up-carousel").owlCarousel({
     autoplay: true,
-    autoplayTimeout: 3000, // Time between slides
-    autoplayHoverPause: true,
     smartSpeed: 1500,
     margin: 30,
     loop: true,
@@ -104,11 +102,10 @@ $(".testi-carousel").owlCarousel({
         items: 1,
       },
       1200: {
-        items: 2,
+        items: 3,
       },
     },
-    animateOut: 'slideOutUp', // Custom animation for items leaving
-    animateIn: 'slideInUp',   // Custom animation for items entering
+ 
   });
   
   

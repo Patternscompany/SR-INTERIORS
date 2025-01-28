@@ -471,7 +471,7 @@
         class="about-section about-img-box section-size mt-space mb-space"
         style="background-color: #0a0a0a"
       >
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
           <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
             <div class="about-img-part side-img-part">
               <div class="">
@@ -1067,7 +1067,7 @@
         <!--Bedroom Room-->
         <div class="services-btn">
           <h4 class="text-center p-1 colo classic-heading">
-            Create Your Perfect Retreat: Beautiful Bedrooms
+            CREATE YOUR PERFECT RETREAT: BEAUTIFUL BEDROOMS
             <i class="fas fa-bed icoo"></i>
             <!-- Bedroom icon (bed) added here -->
           </h4>
@@ -1299,14 +1299,14 @@
         <style>
           /* Classic 3D Text Styling */
           .classic-heading {
-            font-size: 1.5rem; /* Bold and prominent size */
+            font-size: 1.8rem; /* Bold and prominent size */
             font-family: "Poppins", sans-serif; /* Smooth and modern font */
             font-weight: 700; /* Bold weight for emphasis */
             color: #333; /* Elegant dark shade for sophistication */
             text-shadow: 2px 2px 0px #b5b5b5,
               /* Light shadow for a soft 3D edge */ 4px 4px 0px #ededed; /* Deeper shadow for added depth */
             letter-spacing: 1px; /* Clean spacing for readability */
-            text-transform: capitalize; /* Proper case for a refined look */
+            text-transform: uppercase; /* Proper case for a refined look */
           }
 
           /* Optional Hover Effect for Subtle Interactivity */
@@ -1326,9 +1326,9 @@
           }
 
           /* Responsive Styling for Mobile */
-          @media (max-width: 768px) {
+          @media (max-width: 992px) {
             .classic-heading {
-              font-size: 1.8rem; /* Decrease heading size for mobile */
+              font-size: 1.2rem; /* Decrease heading size for mobile */
             }
 
             .icoo {
@@ -1549,12 +1549,11 @@
   <div class="left">
       <span class="text-white" data-aos="fade-right" data-aos-duration="2000">PROJECTS</span>
   </div>
-  <div class="right">
+  <div class="">
       <!-- First Container: Bottom to Top Scroll -->
-      <div class="container" data-aos="fade-right" data-aos-duration="2000">
           <div class=" owl-carousel up-carousel" >
-            <a href="sr-interior-images/wardrobes/AP1GczMHfxd6BWiUzW4eK5taB6I6AIWk.webp" data-lightbox="mygallery" data-title="Image 1" >
-              <img src="sr-interior-images/wardrobes/AP1GczMHfxd6BWiUzW4eK5taB6I6AIWk.webp" alt="home interior renovation in Hyderabad"></a>
+            <a href="sr-interior-images/bedroom/AP1GczM438DuwPdmYEaI5nxajj_wNQeR.webp" data-lightbox="mygallery" data-title="Image 1" >
+              <img src="sr-interior-images/bedroom/AP1GczM438DuwPdmYEaI5nxajj_wNQeR.webp" alt="home interior renovation in Hyderabad"></a>
               <a href="sr-interior-images/pooja-room/pooja1.jpg" data-lightbox="mygallery" data-title="Image 1">
               <img src="sr-interior-images/pooja-room/pooja1.jpg" alt="Interior Designers in Nallagandla"></a>
               <a href="sr-interior-images/kitchens/AP1GczNCj826s2jeEnkPhCAun5m5Fsmu.webp" data-lightbox="mygallery" data-title="Image 1">
@@ -1567,10 +1566,10 @@
               <img src="sr-interior-images/kitchens/AP1GczMdCim8Pd4Ee6llhereWOUK7E3o.webp" alt="premium residential interiors in Telangana"></a>
               <a href="sr-interior-images/living-room/AP1GczNgMrSYt5olHrf1uDUKGcCKed3z.webp" data-lightbox="mygallery" data-title="Image 1">
               <img src="sr-interior-images/living-room/AP1GczNgMrSYt5olHrf1uDUKGcCKed3z.webp" alt="Best Interior Designers in Nallagandla, Hyderabad"></a>
-          </div>
+       
       </div>
       <!-- Second Container: Top to Bottom Scroll -->
-      <div class="container" data-aos="fade-left" data-aos-duration="2000">
+    
           <div class="owl-carousel up-carousel">
             <a href="sr-interior-images/bedroom/AP1GczMASJrxiDJz__vXVTTAc9BlDiL5.webp" data-lightbox="mygallery" data-title="Image 1">
                <img src="sr-interior-images/bedroom/AP1GczMASJrxiDJz__vXVTTAc9BlDiL5.webp" alt="commercial interior designers in Hyderabad"></a>
@@ -1588,7 +1587,7 @@
               <img src="images/residence/kitchensss/23.png" alt="Top Home Interior Designers in Nallagandla"></a>
               <a href="images/wordrobes/21.png" data-lightbox="mygallery" data-title="Image 1">
               <img src="images/wordrobes/21.png" alt="Best Interior Designers in Nallagandla, Hyderabad"></a>
-          </div>
+          
       </div>
   </div>
   <!-- Buttons Section -->
@@ -1598,12 +1597,13 @@
       <style>
         .sectionproo {
           position: relative;
-          display: flex;
-          flex-wrap: wrap; /* Allow wrapping for elements */
+          /* display: flex;
+          flex-wrap: wrap;  */
           width: 100%;
           padding: 20px;
           overflow: visible;
           border-radius: 10px;
+          height: 100%;
         }
         .left {
           flex: 1;
@@ -1615,6 +1615,9 @@
           font-weight: bold;
           position: relative;
           z-index: 2;
+        }
+        .left span{
+          text-shadow:4px 4px 8px black;
         }
         .right {
           flex: 2;
@@ -1637,24 +1640,13 @@
           animation: scroll 10s linear infinite;
         }
         .owl-carousel.up-carousel img {
-          width: 500px !important;
+          width: 100% !important;
           height: 400px !important;
           margin-bottom: 10px;
           border-radius: 8px;
           object-fit: cover;
         }
-        /* Ensuring the carousel container supports vertical layout */
-.owl-carousel.up-carousel .owl-stage {
-  display: flex;
-  flex-direction: column; /* Arrange items vertically */
-  overflow: hidden;
-}
 
-.owl-carousel.up-carousel .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Custom animations for up-to-down scrolling */
 .owl-carousel.up-carousel .slideOutDown {
@@ -1664,7 +1656,27 @@
 .owl-carousel.up-carousel .slideInDown {
   animation: slide-in-down 1.5s ease-in-out forwards;
 }
+.owl-carousel.up-carousel .owl-nav{
 
+}
+
+.owl-carousel.up-carousel .owl-nav .owl-prev{
+  position: absolute;
+  top:50%;
+  left:0;
+
+}
+.owl-carousel.up-carousel .owl-nav .owl-next{
+  position: absolute;
+  top:50%;
+  right:0;
+}
+.owl-carousel.up-carousel .owl-nav .owl-prev,
+.owl-carousel.up-carousel .owl-nav .owl-next{
+background-color: #b58900;
+padding: 0.2rem 0.5rem;
+color: white;
+}
 @keyframes slide-out-down {
   from {
     transform: translateY(0);
@@ -1795,7 +1807,7 @@
                   action="//submit.form"
                   onSubmit="return validateForm();"
                 >
-                  <h2 class="text-black">Contact Us</h2>
+                  <h2 class="text-black">CONTACT US</h2>
                   <div style="max-width: 400px"></div>
                   <div style="padding-bottom: 18px">
                     Name<span style="color: red"> *</span><br />
@@ -2296,7 +2308,8 @@
           data-aos="fade-left"
           data-aos-duration="2000"
         >
-          Our Trusted Brand Partners
+        OUR TRUSTED BRAND PARTNERS
+          
         </h2>
       </div>
       <section class="mb-5" data-aos="fade-right" data-aos-duration="2000">
@@ -3106,11 +3119,11 @@
             data-aos="fade-right"
             data-aos-duration="2000"
           >
-            Our Gallery
+            OUR GALLERY
           </h2>
         </div>
 
-        <div class="container">
+        <div class="">
           <div class="row owl-carousel gallery-b-carousel">
             <div class="">
               <img
